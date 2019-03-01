@@ -35,4 +35,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainCo
     public void setNetPictureUrl(String url) {
         Log.d("activity_main","url--------------->"+url);
     }
+    public void getNetPictureUrl(){
+        mPresenter.getNetPictureUrl();
+    }
 }
