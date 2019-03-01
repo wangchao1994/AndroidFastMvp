@@ -7,11 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.raisesail.mvp.mvp.presenter.BasePresenter;
-import com.raisesail.mvp.mvp.view.IBaseView;
 import com.raisesail.mvp.utils.AppManager;
 
-public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements IBaseView {
-    private P mPresenter;
+public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity {
+    protected P mPresenter;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,8 +56,4 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
         super.onDestroy();
     }
 
-    @Override
-    public void showErrorMsg(String message) {
-
-    }
 }

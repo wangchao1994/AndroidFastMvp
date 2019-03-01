@@ -1,10 +1,12 @@
 package com.raisesail.mvp.mvp.contract;
 
-public class IMainContract {
-    public interface Presenter{
-        void getMessage();
+public interface IMainContract {
+
+    interface Presenter{
+        void getNetPictureUrl();
     }
-    public interface View{
-        void setMessage();
+
+    interface View {
+        void setNetPictureUrl(String url);
     }
 }

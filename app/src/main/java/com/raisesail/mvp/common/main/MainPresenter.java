@@ -7,13 +7,18 @@ import com.raisesail.mvp.mvp.presenter.BasePresenter;
  * 主页面处理
  */
 public class MainPresenter extends BasePresenter<IMainContract.View> implements IMainContract.Presenter {
+
     private MainModel mMainModel;
     public MainPresenter(){
         mMainModel = new MainModel();
     }
 
-    @Override
-    public void getMessage() {
 
+    @Override
+    public void getNetPictureUrl() {
+        String netPitcureUrl = mMainModel.getNetPitcureUrl();
+        if (!"".equals(netPitcureUrl)&& netPitcureUrl != null){
+            getView().setNetPictureUrl(netPitcureUrl);
+        }
     }
 }

@@ -1,10 +1,9 @@
 package com.raisesail.mvp.mvp.presenter;
 
-import com.raisesail.mvp.mvp.view.IBaseView;
 
 import java.lang.ref.WeakReference;
 
-public abstract class BasePresenter<V extends IBaseView> {
+public abstract class BasePresenter<V> {
 
     protected WeakReference<V> mWeakReference;
     /**
