@@ -1,5 +1,6 @@
 package com.raisesail.mvp.z_mvp_final.base;
 
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,9 +13,11 @@ import com.raisesail.mvp.z_mvp_final.IBaseView;
 
 public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements IBaseView {
     protected P mPresenter;
+    protected Context mContext;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mContext = this;
         setContentView(getLayoutId());
         setStatusTextColor(true);
         bindView();
@@ -62,5 +65,10 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
     protected void onDestroy() {
         super.onDestroy();
         unBindView();
+    }
+
+    @Override
+    public Context getViewContext() {
+        return mContext;
     }
 }
