@@ -1,12 +1,12 @@
 package com.raisesail.mvp.z_mvp_final.model;
 
-import com.raisesail.mvp.z_mvp_final.IModel;
-import com.raisesail.mvp.z_mvp_final.contract.MainContract;
+import com.raisesail.mvp.z_mvp_final.IBaseModel;
+import com.raisesail.mvp.z_mvp_final.contract.HomeContract;
 
 /**
  * 数据访问回传
  */
-public class SimpleModel extends IModel implements MainContract.Model {
+public class HomeModel extends IBaseModel implements HomeContract.Model {
 
     @Override
     public void simpleModel(ModelListener modelListener) {

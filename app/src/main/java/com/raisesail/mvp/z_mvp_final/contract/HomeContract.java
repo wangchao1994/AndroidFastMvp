@@ -1,7 +1,7 @@
 package com.raisesail.mvp.z_mvp_final.contract;
 
 //link
-public interface MainContract {
+public interface HomeContract {
 
     interface View{
         void simpleView(String message);

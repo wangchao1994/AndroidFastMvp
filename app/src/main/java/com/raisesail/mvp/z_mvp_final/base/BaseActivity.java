@@ -7,10 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.raisesail.mvp.utils.AppManager;
-import com.raisesail.mvp.z_mvp_final.IView;
+import com.raisesail.mvp.z_mvp_final.IBaseView;
 
 
-public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements IView {
+public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements IBaseView {
     protected P mPresenter;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

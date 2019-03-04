@@ -1,10 +1,10 @@
 package com.raisesail.mvp.z_mvp_final.base;
 
-import com.raisesail.mvp.z_mvp_final.IPresenter;
+import com.raisesail.mvp.z_mvp_final.IBasePresenter;
 
 import java.lang.ref.WeakReference;
 
-public class BasePresenter<V> implements IPresenter<V> {
+public class BasePresenter<V> implements IBasePresenter<V> {
 
     protected WeakReference<V> mWeakReference;
     /**

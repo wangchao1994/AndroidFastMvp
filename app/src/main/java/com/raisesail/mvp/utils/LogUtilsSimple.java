@@ -4,7 +4,7 @@ package com.raisesail.mvp.utils;
 import android.util.Log;
 
 
-public class LogUtils {
+public class LogUtilsSimple {
 	
     private static boolean DEBUG = true;//默认关闭LOG输出
 

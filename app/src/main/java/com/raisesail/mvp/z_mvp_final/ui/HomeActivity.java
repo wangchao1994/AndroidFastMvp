@@ -5,10 +5,10 @@ import android.widget.Toast;
 
 import com.raisesail.mvp.R;
 import com.raisesail.mvp.z_mvp_final.base.BaseActivity;
-import com.raisesail.mvp.z_mvp_final.contract.MainContract;
-import com.raisesail.mvp.z_mvp_final.presenter.SimplePresenter;
+import com.raisesail.mvp.z_mvp_final.contract.HomeContract;
+import com.raisesail.mvp.z_mvp_final.presenter.HomePresenter;
 
-public class SimpleActivity extends BaseActivity<SimplePresenter> implements MainContract.View {
+public class HomeActivity extends BaseActivity<HomePresenter> implements HomeContract.View {
 
     @Override
     protected int getLayoutId() {
@@ -16,8 +16,8 @@ public class SimpleActivity extends BaseActivity<SimplePresenter> implements Mai
     }
 
     @Override
-    protected SimplePresenter createPresenter() {
-        return new SimplePresenter();
+    protected HomePresenter createPresenter() {
+        return new HomePresenter();
     }
 
     @Override
