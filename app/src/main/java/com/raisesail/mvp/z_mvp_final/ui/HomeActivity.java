@@ -1,6 +1,7 @@
 package com.raisesail.mvp.z_mvp_final.ui;
 
 import android.os.Bundle;
+import android.os.Message;
 import android.widget.Toast;
 
 import com.raisesail.mvp.R;
@@ -22,11 +23,16 @@ public class HomeActivity extends BaseActivity<HomePresenter> implements HomeCon
 
     @Override
     protected void initContentData(Bundle savedInstanceState) {
-        mPresenter.simplePresenter();
+        mPresenter.homePresenter();
     }
 
     @Override
-    public void simpleView(String message) {
+    public void homeView(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void handleMsg(Message msg) {
+
     }
 }

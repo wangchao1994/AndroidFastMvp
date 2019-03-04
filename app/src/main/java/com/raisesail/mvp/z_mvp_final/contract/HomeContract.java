@@ -4,15 +4,15 @@ package com.raisesail.mvp.z_mvp_final.contract;
 public interface HomeContract {
 
     interface View{
-        void simpleView(String message);
+        void homeView(String message);
     }
 
     interface Presenter{
-        void simplePresenter();
+        void homePresenter();
     }
 
     interface Model{
-        void simpleModel(ModelListener modelListener);
+        void homeModel(ModelListener modelListener);
         interface ModelListener{
             void completed(String message);
         }

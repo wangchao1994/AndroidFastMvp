@@ -11,12 +11,12 @@ public class HomePresenter extends BasePresenter<HomeContract.View> implements H
         mSimpleModel = new HomeModel();
     }
     @Override
-    public void simplePresenter() {
-        mSimpleModel.simpleModel(new HomeContract.Model.ModelListener() {
+    public void homePresenter() {
+        mSimpleModel.homeModel(new HomeContract.Model.ModelListener() {
             @Override
             public void completed(String message) {
                 if (isViewAttached()){
-                    getView().simpleView(message);
+                    getView().homeView(message);
                 }
             }
         });
