@@ -1,8 +1,9 @@
 package com.raisesail.mvp.mvpdemo.presenter;
 
-import com.android.mvpdemo.base.BasePresenter;
-import com.android.mvpdemo.contract.MainContract;
-import com.android.mvpdemo.model.MainModel;
+
+import com.raisesail.mvp.mvpdemo.base.BasePresenter;
+import com.raisesail.mvp.mvpdemo.contract.MainContract;
+import com.raisesail.mvp.mvpdemo.model.MainModel;
 
 import java.util.List;
 

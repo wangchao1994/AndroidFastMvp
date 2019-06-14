@@ -1,7 +1,8 @@
 package com.raisesail.mvp.mvpdemo.model;
 
-import com.android.mvpdemo.base.imp.IBaseModel;
-import com.android.mvpdemo.contract.MainContract;
+
+import com.raisesail.mvp.mvpdemo.base.imp.IBaseModel;
+import com.raisesail.mvp.mvpdemo.contract.MainContract;
 
 import java.util.ArrayList;
 import java.util.List;

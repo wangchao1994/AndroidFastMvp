@@ -2,10 +2,12 @@ package com.raisesail.mvp.mvpdemo;
 
 import android.os.Message;
 import android.os.Bundle;
-import com.android.mvpdemo.base.BaseActivity;
-import com.android.mvpdemo.contract.MainContract;
-import com.android.mvpdemo.presenter.MainPresenter;
-import com.android.mvpdemo.utils.LogUtils;
+
+import com.raisesail.mvp.R;
+import com.raisesail.mvp.mvpdemo.base.BaseActivity;
+import com.raisesail.mvp.mvpdemo.contract.MainContract;
+import com.raisesail.mvp.mvpdemo.presenter.MainPresenter;
+import com.raisesail.mvp.mvpdemo.utils.LogUtils;
 
 import java.util.List;
 

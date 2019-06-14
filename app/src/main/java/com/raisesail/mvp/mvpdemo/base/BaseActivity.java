@@ -7,14 +7,14 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.android.mvpdemo.R;
-import com.android.mvpdemo.base.imp.IBaseView;
-import com.android.mvpdemo.utils.AppManager;
-import com.android.mvpdemo.utils.GlobalHandler;
-import com.android.mvpdemo.utils.PreferencesUtils;
-import com.android.mvpdemo.utils.StatusBarUtil;
+import com.raisesail.mvp.R;
+import com.raisesail.mvp.mvpdemo.utils.AppManager;
+import com.raisesail.mvp.mvpdemo.utils.StatusBarUtil;
+import com.raisesail.mvp.z_mvp_final.IBaseView;
+import com.raisesail.mvp.z_mvp_final.utils.PreferencesUtils;
+import com.raisesail.mvp.z_mvp_final.utils.handler.GlobalHandler;
 
-public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements IBaseView ,GlobalHandler.HandleMsgListener {
+public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements IBaseView, GlobalHandler.HandleMsgListener {
     protected P mPresenter;
     protected Context mContext;
     protected GlobalHandler mGlobalHandler;

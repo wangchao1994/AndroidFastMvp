@@ -1,6 +1,6 @@
 package com.raisesail.mvp.mvpdemo.base;
 
-import com.android.mvpdemo.base.imp.IBasePresenter;
+import com.raisesail.mvp.mvpdemo.base.imp.IBasePresenter;
 
 import java.lang.ref.WeakReference;
 
